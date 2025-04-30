@@ -1,0 +1,14 @@
+/* Example generated header, this will fill in with actual values on configure. */
+
+#ifndef VERSION_H
+#define VERSION_H 1
+
+#define PROJECT_NAME_STRING "@PROJECT_NAME@"
+
+#define PROJECT_VERSION_STRING "@PROJECT_VERSION@"
+#define PROJECT_VERSION_MAJOR @PROJECT_VERSION_MAJOR@
+#define PROJECT_VERSION_MINOR @PROJECT_VERSION_MINOR@
+#define PROJECT_VERSION_PATCH @PROJECT_VERSION_PATCH@
+#define PROJECT_VERSION_TWEAK @PROJECT_VERSION_TWEAK@
+
+#endif
