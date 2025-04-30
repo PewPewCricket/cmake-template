@@ -16,14 +16,15 @@ file(
   CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"   # remove this if you dont wanto to compile .cpp files
 )
 
-# this runs cmake/gen_headers.cmake, which generates any needed header files.
-include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/gen_headers.cmake)
-
 # this adds a rule to compile all files in the src/ directory.
 add_executable(
   ${PROJECT_NAME}
   ${SRC_FILES}
 )
+
+# this runs cmake/gen_headers.cmake, which generates any needed header files.
+include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/gen_headers.cmake)
+include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/dependencies.cmake)
 
 # this adds include/ and our generated headers in build/include/ as include directories. 
 target_include_directories(
