@@ -4,4 +4,4 @@ You can write your own cmake scripts in the cmake/ directory, but you must add a
 
 If you are not familiar with cmake, please read up on it here: https://cmake.org/cmake/help/latest/index.html
 
-You may git clone or fork this repo and use it without giving credit to me.
+You may copy the source files and use it without giving credit to me.
